@@ -22,16 +22,17 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %----------------------------------------------------------------------------------------
-%	DOCUMENT CONFIGURATIONS AND INFORMATION
+%   DOCUMENT CONFIGURATIONS AND INFORMATION
 %----------------------------------------------------------------------------------------
 
 \documentclass[11pt, a4paper]{article} % Document font size and paper size
 
 \usepackage{verse} % Required for typesetting poems - this package drives this template
+\usepackage{titlesec}
 
 \usepackage[T1]{fontenc} % International character encodings
-% \usepackage{palatino} % Use the Palatino font by default
-\usepackage{stix} % Alternative Stix font
+\usepackage{palatino} % Use the Palatino font by default
+% \usepackage{stix} % Alternative Stix font
 
 \setlength{\parindent}{0pt} % Disable paragraph indentation
 
@@ -45,7 +46,22 @@
 
 \pagestyle{empty} % Stop page numbering through the document
 
+\titleformat{\chapter}[display]
+{\normalfont\Large\filcenter\sffamily}
+{\vspace*{\fill}
+ \titlerule[1pt]%
+ \vspace{1pt}%
+ \titlerule
+ \vspace{1pc}%
+ \LARGE\MakeUppercase{\chaptertitlename}~\thechapter}
+{1pc}
+{\titlerule\Huge}
+[\vspace*{\fill}\newpage]
+
 \begin{document}
+
+\chapter{And No More Shall We Part - 2001}
+\newpage
 
 %----------------------------------------------------------------------------------------
 % As I sat sadly by her side
@@ -152,17 +168,17 @@ Upon the bough \\!
 
 And no more shall we part \\
 Your chain of command has been silenced now \\
-And all of those birds would’ve sung to your \\
+And all of those birds would've sung to your \\
 beautiful heart \\
 Anyhow \\!
 
 Lord, stay by me \\
-Don’t go down \\
+Don't go down \\
 I will never be free \\
-If I’m not free now \\!
+If I'm not free now \\!
 
 Lord, stay by me \\
-Don’t go down \\
+Don't go down \\
 I never was free \\
 What are you talking about? \\!
 
